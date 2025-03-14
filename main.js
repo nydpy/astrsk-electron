@@ -7,18 +7,18 @@ app.whenReady().then(() => {
   mainWindow = window.createBrowserWindow(app);
 
   // Option 1: Uses Webtag and load a custom html file with external content
-  mainWindow.loadFile("index.html");
+  // mainWindow.loadFile("index.html");
   //mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // Option 2: Load directly an URL if you don't need interface customization
-  //mainWindow.loadURL("https://github.com");
+  mainWindow.loadURL("https://astrsk.ai");
 
   // Option 3: Uses BrowserView to load an URL
   //const view = require("./src/view");
   //view.createBrowserView(mainWindow);
 
   // Display Dev Tools
-  //mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
   // Menu (for standard keyboard shortcuts)
   const menu = require("./src/menu");

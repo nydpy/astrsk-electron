@@ -4,15 +4,14 @@ const { BrowserWindow } = require("electron"); // https://www.electronjs.org/doc
 exports.createBrowserWindow = () => {
   // https://www.electronjs.org/docs/api/browser-window#class-browserwindow
   return new BrowserWindow({
-    width: 1024,
-    height: 768,
+    width: 1280,
+    height: 720,
     icon: path.join(__dirname, "assets/icons/png/64x64.png"),
-    //titleBarStyle: 'hidden',
-    //frame: false,
+    title: "astrsk.ai",
     backgroundColor: "#fff",
     webPreferences: {
       nativeWindowOpen: true,
-      devTools: true, // false if you want to remove dev tools access for the user
+      devTools: false,
       contextIsolation: true,
       webviewTag: true, // https://www.electronjs.org/docs/api/webview-tag,
       preload: path.join(__dirname, "../preload.js"), // required for print function
