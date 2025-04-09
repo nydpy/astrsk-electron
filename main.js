@@ -21,10 +21,11 @@ app.whenReady().then(() => {
   // mainWindow.openDevTools();
 
   // Menu (for standard keyboard shortcuts)
-  const menu = require("./src/menu");
-  const template = menu.createTemplate(app.name);
-  const builtMenu = Menu.buildFromTemplate(template);
-  Menu.setApplicationMenu(builtMenu);
+  // const menu = require("./src/menu");
+  // const template = menu.createTemplate(app.name);
+  // const builtMenu = Menu.buildFromTemplate(template);
+  // Menu.setApplicationMenu(builtMenu);
+  Menu.setApplicationMenu(null);
 
   // Print function (if enabled)
   require("./src/print");

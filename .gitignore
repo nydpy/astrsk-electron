@@ -2,3 +2,9 @@ node_modules
 release-builds
 package-lock.json
 .DS_Store
+
+dist/*
+.env
+package-mac-signed.sh
+certificate.p12
+.erb/*
